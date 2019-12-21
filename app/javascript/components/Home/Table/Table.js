@@ -14,7 +14,7 @@ class Table extends Component {
       return (
         data.active ?
         <ActiveItem handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} /> :
-        <Item key={data.id} title={data.title} description={data.description} />
+        <Item handleVideoChange={handleVideoChange} key={data.id} title={data.title} description={data.description} />
       )
     })
 
